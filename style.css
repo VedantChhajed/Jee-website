@@ -1,0 +1,345 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    min-width: 1200px;
+}
+
+/* Top bar styles */
+.top-bar {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    padding: 2px 0;
+}
+
+.govt-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-size: 12px;
+    color: #333;
+}
+
+.govt-header .left {
+    line-height: 1.4;
+}
+
+.govt-header .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.govt-header .right a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.font-size {
+    display: flex;
+    align-items: center;
+}
+
+.font-size a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 2px;
+    padding: 0 3px;
+}
+
+/* Main header styles */
+.main-header {
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.left-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.left-logo img {
+    height: 90px;
+}
+
+.dept-name {
+    text-align: left;
+}
+
+.dept-name .hi {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.dept-name .en {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.center-title {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.center-title .hi {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.center-title .en {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.center-title .sub {
+    font-size: 18px;
+    color: #333;
+}
+
+.right-logo img {
+    height: 70px;
+    margin-top: -5px;
+}
+
+/* Navigation styles */
+.main-nav {
+    background-color: #e17f35;
+    padding: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+}
+
+.main-nav a:hover {
+    background-color: #d17025;
+}
+
+/* Announcement banner */
+.announcement-banner {
+    background-color: white;
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.red-text {
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+/* News ticker */
+.news-ticker {
+    display: flex;
+    align-items: center;
+    background-color: #28a745;
+    padding: 8px 15px;
+    color: white;
+}
+
+.latest-news {
+    background-color: white;
+    color: #28a745;
+    padding: 4px 12px;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.news-content {
+    flex: 1;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.news-item {
+    padding: 0 15px;
+}
+
+.news-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.ticker-controls {
+    display: flex;
+    gap: 8px;
+    margin-left: 15px;
+}
+
+.ticker-controls button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+/* Main content */
+.content {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.left-panel {
+    flex: 1;
+}
+
+.right-panel {
+    flex: 2;
+}
+
+/* Section styles */
+.section {
+    background-color: white;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.section h2 {
+    background-color: #e17f35;
+    color: white;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.introduction h2 {
+    background-color: #f8f9fa;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.introduction h2::before {
+    content: "ℹ";
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.section > div,
+.section > ul {
+    padding: 15px;
+}
+
+.public-notices ul {
+    list-style: none;
+}
+
+.public-notices li {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.public-notices li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.public-notices a {
+    color: #0056b3;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.public-notices a:hover {
+    text-decoration: underline;
+}
+
+.new-tag {
+    background-color: #28a745;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 2px;
+    font-size: 11px;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+
+.introduction p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.introduction p:last-child {
+    margin-bottom: 0;
+}
+
+/* Tab panel styles */
+.tab-panel {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-panel > div {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tab-panel > div:first-child {
+    background-color: #e17f35;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    body {
+        min-width: 1200px;
+    }
+}
